@@ -1,39 +1,19 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="screen-orientation" content="portrait"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-    <meta name="msapplication-tap-highlight" content="no">
-    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
-    <title>Hello World</title>
-</head>
-<body onload="onLoad()">
-<div class="app">
-    <h1  id="deviceready">Apache Cordova</h1>
-</div>
-<script type="text/javascript" src="cordova.js"></script>
-<script type="text/javascript" charset="utf-8">
-
-    //页面加载后添加各事件监听
-    function onLoad() {
-        document.addEventListener("deviceready", onDeviceReady, false);
-        document.addEventListener("resume", onResume, false);
-        document.addEventListener("pause", onPause, false);
-    }
-
-    //Cordova加载完毕
-    function onDeviceReady() {
-        alert("Cordova加载完毕！");
-    }
-
-    //进入后台
-    function onPause() {
-        alert("应用进入到后台！");
-    }
-
-    //恢复到前台
-    function onResume() {
-        alert("应用回到前台运行！");
-    }
-</script>
-</body>
+    <meta name="full-screen" content="yes">
+    <meta name="x5-fullscreen" content="true">
+    <title>elm</title>
+  <link href="static/css/app.css" rel="stylesheet"></head>
+  <body>
+    <div id="app">
+    	<router-view></router-view>
+    </div>
+    <script type=text/javascript src=cordova.js></script>
+  <script type="text/javascript" src="static/js/manifest.js"></script><script type="text/javascript" src="static/js/vendor.js"></script><script type="text/javascript" src="static/js/app.js"></script></body>
 </html>
